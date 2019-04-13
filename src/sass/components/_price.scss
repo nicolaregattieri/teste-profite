@@ -1,0 +1,16 @@
+.price {
+  &__list {
+    text-decoration-line: line-through;
+    margin-bottom: 4px;
+  }
+  &__best {
+    font-weight: 500;
+    @include font-size(16px);
+    text-align: center;
+    color: $green-blue;
+    margin-bottom: 4px;
+  }
+  &__installment {
+    margin-bottom: 5px;
+  }
+}
