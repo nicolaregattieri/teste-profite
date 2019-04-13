@@ -3,10 +3,18 @@
 @import "./base/fonts";
 @import "./base/mixins";
 @import "../../node_modules/tiny-slider/dist/tiny-slider";
+@import "./utils/functional";
 
 @import "./components/container";
+@import "./components/section";
 @import "./components/header";
 @import "./components/menu";
+@import "./components/banner";
 @import "./components/shelf";
+@import "./components/product";
+@import "./components/price";
+@import "./components/btn";
+@import "./components/tns-carousel";
+@import "./components/footer";
 
 @import "./layouts/home";
