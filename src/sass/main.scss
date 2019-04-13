@@ -1,0 +1,12 @@
+@import "./utils/minimalreset";
+@import "./base/variables";
+@import "./base/fonts";
+@import "./base/mixins";
+@import "../../node_modules/tiny-slider/dist/tiny-slider";
+
+@import "./components/container";
+@import "./components/header";
+@import "./components/menu";
+@import "./components/shelf";
+
+@import "./layouts/home";
