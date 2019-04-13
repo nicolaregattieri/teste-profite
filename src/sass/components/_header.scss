@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 12px;
     flex-wrap: wrap;
   }
   &__cart {
@@ -31,11 +31,14 @@
     color: $just-grey;
     border-style: none;
     border-bottom: 1px solid $just-grey;
-    padding-bottom: 10px;
+    padding: 10px 0 8px;
   }
   &__search-button {
     position: absolute;
-    top: 4px;
+    top: 10px;
     right: 0;
+  }
+  .logo a {
+    display: flex;
   }
 }
