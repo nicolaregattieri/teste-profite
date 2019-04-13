@@ -1,0 +1,25 @@
+.tns {
+  &-nav {
+    background: transparent;
+    @extend %flex-center;
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button {
+      width: 6.99px;
+      height: 7px;
+      left: 133px;
+      top: 251.76px;
+      border-radius: 50%;
+      background-color: $simple-grey;
+      margin: 0 4.15px;
+      padding: 0;
+      &.tns-nav-active {
+        background-color: $orange;
+      }
+    }
+  }
+}
