@@ -1,0 +1,5 @@
+body.home {
+  background: $white;
+  @extend %font-base;
+  @include font-size(16px);
+}
