@@ -1,0 +1,41 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    flex-wrap: wrap;
+  }
+  &__cart {
+    @extend %flex-center;
+  }
+  .cart__counter {
+    color: $white;
+    margin-left: 4.87px;
+    @extend %flex-center;
+    @include font-size(10px);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    left: 286px;
+    background-color: $green-blue;
+  }
+  &__form {
+    flex: 1 0 100%;
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    @extend %font-base;
+    @include font-size(13px);
+    color: $just-grey;
+    border-style: none;
+    border-bottom: 1px solid $just-grey;
+    padding-bottom: 10px;
+  }
+  &__search-button {
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+}
