@@ -110,6 +110,17 @@ Icon
 # Thumbnails
 ._*
 
+node_modules
+dist
+.vscode
+
+.DS_Store
+.env
+.vtexid
+npm-debug.log
+
+yarn.lock
+package-lock.json
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
