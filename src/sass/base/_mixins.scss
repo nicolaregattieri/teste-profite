@@ -6,6 +6,17 @@
 %font-base {
   font-family: Ubuntu, sans-serif;
 }
+%rectangle {
+  &:after {
+    content: "";
+    display: block;
+    width: 32.5px;
+    height: 0px;
+    border: 2.4px solid $orange;
+    margin-top: 5px;
+    background: $orange;
+  }
+}
 
 // FONT SIZE AND FAMILY
 @function calculateRem($size) {
