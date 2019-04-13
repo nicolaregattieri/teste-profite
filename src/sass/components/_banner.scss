@@ -1,0 +1,27 @@
+.banner {
+  &__text {
+    @include font-size(30px);
+    width: 60%;
+    font-weight: bold;
+    color: $white;
+    margin: 12px auto auto 20px;
+    @extend %rectangle;
+  }
+}
+
+.banner--mob {
+  padding-top: 11.5px;
+
+  .tns-nav {
+    bottom: 13px;
+  }
+  .box-image {
+    min-width: 320px;
+    width: 100%;
+    min-height: 59.8vw;
+    background-color: #464646;
+  }
+  .box-image a {
+    // @extend %flex-center;
+  }
+}
