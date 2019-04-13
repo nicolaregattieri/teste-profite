@@ -1,0 +1,28 @@
+.menu {
+  &__icon {
+    display: inline-block;
+    cursor: pointer;
+    .bar1,
+    .bar2,
+    .bar3 {
+      display: block;
+      width: 23px;
+      height: 3px;
+      background-color: $darken;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .change {
+      .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      .bar2 {
+        opacity: 0;
+      }
+      .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+}
