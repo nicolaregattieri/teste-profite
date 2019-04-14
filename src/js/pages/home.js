@@ -6,14 +6,36 @@ class Home {
     this.bannerToReceiveCarousel = document.querySelector(
       ".banner--mob-carousel"
     );
-    this.setBackGroundToCarousel();
+    this.bannerDeskToReceiveCarousel = document.querySelector(
+      ".banner--desk-carousel"
+    );
+    this.setBackGroundToCarousel(".banner--mob");
+    this.setBackGroundToCarousel(".banner--desk");
     this.callCarousel(this.shelfToReceiveCarousel, 2, "carousel", false, false);
     this.callCarousel(this.bannerToReceiveCarousel, 1, "gallery", true, false);
+    this.callCarousel(
+      this.bannerDeskToReceiveCarousel,
+      2,
+      "gallery",
+      true,
+      false
+    );
+    this.menuIcon = document.querySelector(".menu__icon");
+    this.events();
+  }
+  events() {
+    this.menuIcon.addEventListener("click", this.togleTheMenu);
   }
 
-  setBackGroundToCarousel() {
+  togleTheMenu() {
+    this.classList.contains("change")
+      ? this.classList.remove("change")
+      : this.classList.add("change");
+  }
+
+  setBackGroundToCarousel(banner) {
     let imgElement = document
-      .querySelector(".banner--mob")
+      .querySelector(banner)
       .querySelectorAll(".box-image img");
 
     imgElement.forEach(element => {
@@ -28,18 +50,58 @@ class Home {
   }
 
   callCarousel(elm, items, mode, autoplay, controls) {
-    const slider = tns({
-      container: elm,
-      items: items,
-      slideBy: "page",
-      //   autoplay: autoplay,
-      mode: mode,
-      controls: controls,
-      autoplayButton: false,
-      nav: true,
-      autoplayButtonOutput: false,
-      mouseDrag: true
-    });
+    if (elm.classList.contains("banner--desk-carousel")) {
+      let slider = tns({
+        container: elm,
+        items: items,
+        slideBy: "page",
+        autoplay: false,
+        mode: mode,
+        controls: controls,
+        autoplayButton: false,
+        nav: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        controls: true
+      });
+    }
+    if (elm.classList.contains("banner--mob-carousel")) {
+      let slider = tns({
+        container: elm,
+        items: items,
+        slideBy: "page",
+        autoplay: false,
+        mode: mode,
+        controls: controls,
+        autoplayButton: false,
+        nav: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        controls: false
+      });
+    }
+    if (elm.classList.contains("shelf-carousel")) {
+      let slider = tns({
+        container: elm,
+        items: items,
+        slideBy: "page",
+        autoplay: false,
+        mode: mode,
+        controls: controls,
+        autoplayButton: false,
+        nav: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        controls: false,
+        responsive: {
+          800: {
+            items: 4,
+            controls: true,
+            nav: false
+          }
+        }
+      });
+    }
   }
 }
 
