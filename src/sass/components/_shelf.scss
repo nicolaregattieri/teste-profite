@@ -1,10 +1,36 @@
 .shelf {
+  position: relative;
+  li {
+    @include atMedium {
+      min-height: 353px;
+      padding: 20px;
+      &:hover {
+        background-color: $hover-product;
+      }
+    }
+    cursor: pointer;
+  }
+  .tns-ovh {
+    @include atMedium {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+  }
   padding-top: 16px;
   padding-bottom: 36px;
   &__title {
     @extend %rectangle;
+    @include atMedium {
+      margin-bottom: 15px;
+    }
   }
   .tns-nav {
-    bottom: -50px;
+    bottom: 0;
+  }
+  .tns-controls button {
+    z-index: 99999;
+    &:before {
+      background-image: url(/arquivos/arrow-black.png);
+    }
   }
 }
