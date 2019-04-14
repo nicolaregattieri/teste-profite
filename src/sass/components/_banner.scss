@@ -6,10 +6,18 @@
     color: $white;
     margin: 12px auto auto 20px;
     @extend %rectangle;
+    @include atMedium {
+      @include font-size(45px);
+      width: 70%;
+      margin: 0;
+    }
   }
 }
 
 .banner--mob {
+  @include atMedium {
+    display: none;
+  }
   padding-top: 11.5px;
 
   .tns-nav {
@@ -21,7 +29,22 @@
     min-height: 59.8vw;
     background-color: #464646;
   }
-  .box-image a {
-    // @extend %flex-center;
+}
+.banner--desk {
+  display: none;
+  @include atMedium {
+    display: block;
+  }
+  .box-image {
+    min-width: 320px;
+    width: 100%;
+    background-color: #464646;
+    min-height: 430px;
+    &--color {
+      background-color: $dark-blue;
+      h2 {
+        margin: 20% auto 0 auto;
+      }
+    }
   }
 }
