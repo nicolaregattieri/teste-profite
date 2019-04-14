@@ -25,7 +25,7 @@
         "installments": 3,
         "installmentsValue": "R$ 133,00",
         "installmentsInsterestRate": 0,
-        "image": "/arquivos/imagem-produto.jpg",
+        "image": "/arquivos/imagem-produto.png",
         "sellerId": "1",
         "seller": "meiskinbc",
         "measures": {
@@ -66,9 +66,10 @@
         "installments": 3,
         "installmentsValue": "R$ 133,00",
         "installmentsInsterestRate": 0,
-        "image": "/arquivos/imagem-produto.jpg",
+        "image": "/arquivos/imagem-produto.png",
         "sellerId": "1",
         "seller": "meiskinbc",
+        "flag": "OFF",
         "measures": {
           "cubicweight": 1,
           "height": 18.5,
@@ -107,7 +108,7 @@
         "installments": 3,
         "installmentsValue": "R$ 133,00",
         "installmentsInsterestRate": 0,
-        "image": "/arquivos/imagem-produto.jpg",
+        "image": "/arquivos/imagem-produto.png",
         "sellerId": "1",
         "seller": "meiskinbc",
         "measures": {
@@ -148,7 +149,7 @@
         "installments": 3,
         "installmentsValue": "R$ 133,00",
         "installmentsInsterestRate": 0,
-        "image": "/arquivos/imagem-produto.jpg",
+        "image": "/arquivos/imagem-produto.png",
         "sellerId": "1",
         "seller": "meiskinbc",
         "measures": {
@@ -189,7 +190,89 @@
         "installments": 3,
         "installmentsValue": "R$ 133,00",
         "installmentsInsterestRate": 0,
-        "image": "/arquivos/imagem-produto.jpg",
+        "image": "/arquivos/imagem-produto.png",
+        "sellerId": "1",
+        "seller": "meiskinbc",
+        "measures": {
+          "cubicweight": 1,
+          "height": 18.5,
+          "length": 14,
+          "weight": 110,
+          "width": 2
+        },
+        "unitMultiplier": 1,
+        "rewardValue": 0
+      }
+    ]
+  },
+  {
+    "productId": 6,
+    "name": "TÊNIS COURO PUMA R698 Q4 V2",
+    "salesChannel": "1",
+    "available": true,
+    "displayMode": "especificacao",
+    "dimensions": [],
+    "dimensionsInputType": {},
+    "dimensionsMap": {},
+    "skus": [
+      {
+        "sku": 6,
+        "skuname": "TÊNIS COURO PUMA R698 Q4 V2",
+        "dimensions": {},
+        "available": true,
+        "availablequantity": 1,
+        "cacheVersionUsedToCallCheckout": "5c36c3bc4e3358b7a95205188aa31ae_",
+        "listPriceFormated": "R$ 299,00",
+        "listPrice": 0,
+        "taxFormated": "R$ 0,00",
+        "taxAsInt": 0,
+        "bestPriceFormated": "R$ 399,00",
+        "bestPrice": 27900,
+        "installments": 3,
+        "installmentsValue": "R$ 133,00",
+        "installmentsInsterestRate": 0,
+        "image": "/arquivos/imagem-produto.png",
+        "sellerId": "1",
+        "seller": "meiskinbc",
+        "measures": {
+          "cubicweight": 1,
+          "height": 18.5,
+          "length": 14,
+          "weight": 110,
+          "width": 2
+        },
+        "unitMultiplier": 1,
+        "rewardValue": 0
+      }
+    ]
+  },
+  {
+    "productId": 7,
+    "name": "TÊNIS COURO PUMA R698 Q4 V2",
+    "salesChannel": "1",
+    "available": true,
+    "displayMode": "especificacao",
+    "dimensions": [],
+    "dimensionsInputType": {},
+    "dimensionsMap": {},
+    "skus": [
+      {
+        "sku": 6,
+        "skuname": "TÊNIS COURO PUMA R698 Q4 V2",
+        "dimensions": {},
+        "available": true,
+        "availablequantity": 1,
+        "cacheVersionUsedToCallCheckout": "5c36c3bc4e3358b7a95205188aa31ae_",
+        "listPriceFormated": "R$ 299,00",
+        "listPrice": 0,
+        "taxFormated": "R$ 0,00",
+        "taxAsInt": 0,
+        "bestPriceFormated": "R$ 399,00",
+        "bestPrice": 27900,
+        "installments": 3,
+        "installmentsValue": "R$ 133,00",
+        "installmentsInsterestRate": 0,
+        "image": "/arquivos/imagem-produto.png",
         "sellerId": "1",
         "seller": "meiskinbc",
         "measures": {
