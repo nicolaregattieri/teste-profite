@@ -1,3 +1,7 @@
+run :  yarn dev || build
+
+tks !
+
 # RJ Desenvolvedor Front-end - Pleno/Sênior
 
 ###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
