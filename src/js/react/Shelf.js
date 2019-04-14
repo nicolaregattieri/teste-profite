@@ -2,7 +2,13 @@ import React, { Component } from "react";
 import Product from "../../../JSON/product";
 
 class Shelf extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const flag = <p className="off">{}</p>;
+
     return (
       <div className="shelf">
         <div className="container">
@@ -13,6 +19,13 @@ class Shelf extends Component {
             return (
               <li key={productDetail.productId}>
                 <div className="product">
+                  {productDetail.skus[0].flag ? (
+                    <p className={productDetail.skus[0].flag.toLowerCase()}>
+                      {productDetail.skus[0].flag}
+                    </p>
+                  ) : (
+                    ""
+                  )}
                   <img
                     className="product__media"
                     src={productDetail.skus[0].image}
