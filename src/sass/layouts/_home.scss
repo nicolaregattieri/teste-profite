@@ -3,3 +3,28 @@ body.home {
   @extend %font-base;
   @include font-size(16px);
 }
+.tns-controls button {
+  top: 40%;
+  position: absolute;
+  z-index: 999;
+  font-size: 0;
+  left: 30px;
+  right: initial;
+  &:nth-child(2) {
+    right: 30px;
+    left: initial;
+    &:before {
+      transform: rotate(0deg);
+    }
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url(/arquivos/arrow-white.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+}
