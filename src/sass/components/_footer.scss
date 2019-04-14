@@ -3,9 +3,23 @@
   margin-top: 10px;
   padding: 27px 0 19px 0;
   border-bottom: 10px solid $green-blue;
+  .container {
+    @include atMedium {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div {
+      @include atMedium {
+        flex: 1;
+      }
+    }
+  }
   &__tlt {
     color: $white;
     @extend %rectangle;
+    @include atMedium {
+      flex: 1 0 100%;
+    }
   }
 
   &__boxes {
@@ -16,6 +30,14 @@
     width: 198px;
     @extend %flex-center;
     justify-content: space-between;
+    @include atMedium {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      a:first-child {
+        margin-right: 12px;
+      }
+    }
   }
   &__buttons {
     @extend %flex-center;
