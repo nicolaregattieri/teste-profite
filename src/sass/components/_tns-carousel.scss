@@ -7,6 +7,9 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    @include atMedium {
+      bottom: 37px;
+    }
 
     button {
       width: 6.99px;
