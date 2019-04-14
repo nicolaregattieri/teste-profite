@@ -3,10 +3,16 @@
   line-height: normal;
   text-align: center;
   color: $just-grey;
+  @include atMedium {
+    @include font-size(12px);
+  }
 }
 .tlt-txt {
   color: $darken;
   font-weight: 700;
   @include font-size(18px);
   margin-bottom: 15px;
+  @include atMedium {
+    @include font-size(20px);
+  }
 }
