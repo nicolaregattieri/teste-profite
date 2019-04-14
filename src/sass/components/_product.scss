@@ -2,17 +2,73 @@
   @extend %flex-center;
   flex-wrap: wrap;
   padding: 0 6px;
+  flex-direction: column;
   &__name {
     font-weight: 500;
     @include font-size(10px);
     text-align: center;
     color: $just-grey;
     margin: 16px 0 6px 0;
+    @include atMedium {
+      @include font-size(12px);
+    }
   }
   &__rating {
     margin-bottom: 8px;
   }
   &__media {
     max-width: 78%;
+  }
+  &__actions {
+    @include atMedium {
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+      li:hover & {
+        opacity: 1;
+      }
+    }
+  }
+}
+.tns-item {
+  position: relative;
+  .off {
+    @include font-size(10px);
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: white;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 22px;
+    @include atMedium {
+      @include font-size(17px);
+      right: 0;
+      width: 50px;
+      height: 50px;
+    }
+
+    &:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 40px solid $orange;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+      color: white;
+      z-index: -1;
+      @include atMedium {
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        border-bottom: 80px solid $orange;
+      }
+    }
   }
 }
