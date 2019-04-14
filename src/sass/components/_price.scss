@@ -9,6 +9,9 @@
     text-align: center;
     color: $green-blue;
     margin-bottom: 4px;
+    @include atMedium {
+      @include font-size(18px);
+    }
   }
   &__installment {
     margin-bottom: 5px;
